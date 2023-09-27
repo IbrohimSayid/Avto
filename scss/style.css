@@ -1,0 +1,589 @@
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-top {
+  height: 135px;
+  padding: 20px 0px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container .header-container-main-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .header-container-main-box .header-container-logo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.container .header-container-main-box .header-container-logo img {
+  width: 174.22px;
+  height: 68.677px;
+  flex-shrink: 0;
+}
+.container .header-container-main-box .header-container-logo .katalog-button {
+  text-decoration: none;
+  color: #FCFCFC;
+  font-family: "Golos Text", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  background-color: #f56e1e;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+.container .header-container-main-box .header-container-logo .katalog-button:hover {
+  background-color: #fff;
+  outline: 2px solid #f56e1e;
+  color: #f56e1e;
+  transform: scale(0.9);
+  /* Increase size on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  /* Add a subtle shadow */
+}
+.container .header-container-main-box .header-container-box .header-container-input {
+  display: flex;
+  width: 608px;
+  height: 54px;
+  padding: 12px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid #A0A3BC;
+  background: #FFF;
+}
+.container .header-container-main-box .header-container-box .header-container-input input {
+  padding: 10px 10px 10px 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: var(--Gray-07, #A0A3BC);
+  font-family: "Golos Text", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+.container .header-container-main-box .header-container-box .header-container-input input ::-ms-input-placeholder {
+  color: #A0A3BC;
+  font-family: "Golos Text", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  /* 100% */
+}
+.container .header-container-main-box .header-container-box .header-container-input a {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  text-decoration: none;
+  color: #A0A3BC;
+}
+.container .header-container-main-box .header-container-box .header-icon-home {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+.container .header-container-main-box .header-container-box .header-icon-home .header-icon {
+  cursor: pointer;
+}
+.container .header-container-main-box .header-container-box .header-icon-home .header-icon img {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+.container .header-container-main-box .header-container-box .header-icon-home .header-icon p {
+  color: #6E7191;
+  font-family: "Golos Text", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  /* 133.333% */
+}
+.container .header-container-bottom-box {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .header-container-bottom-box .header-container-bottom-btn-1 h5 {
+  color: #A0A3BD;
+  font-family: "Golos Text", sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 40px;
+  background: #F1F1F1;
+  padding: 10px;
+}
+.container .header-container-bottom-box .header-bottom-lang {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.container .header-container-bottom-box .header-bottom-lang img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+.container .header-container-bottom-box .header-bottom-lang h5 {
+  color: #6E7191;
+  font-family: "Golos Text", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  /* 114.286% */
+}
+.container .header-container-bottom-box .header-bottom-lang i {
+  font-size: 12px;
+  color: #6E7191;
+}
+.container .header-container-bottom-box .header-bottom-navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  list-style-type: none;
+}
+.container .header-container-bottom-box .header-bottom-navbar ul a {
+  text-decoration: none;
+  color: #6E7191;
+  font-family: "Golos Text", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.container .header-container-bottom-box .header-bottom-navbar ul a:hover {
+  color: #A0A3BC;
+}
+.container .header-container-bottom-box .header-bottom-icon-home {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.container .header-container-bottom-box .header-bottom-icon-home a {
+  text-decoration: none;
+  color: #6E7191;
+  font-size: 22px;
+}
+.container .header-container-bottom-box .header-bottom-icon-home a:hover {
+  color: #A0A3BC;
+}
+.container .header-container-bottom-box .header-bottom-phone-number {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+.container .header-container-bottom-box .header-bottom-phone-number h5 a {
+  color: #F56E1E;
+  font-family: "Golos Text", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+}
+.container .header-container-bottom-box .header-bottom-phone-number a {
+  text-decoration: none;
+  color: #6E7191;
+}
+.container .header-container-bottom-box .header-container-order-button a {
+  background-color: #F56E1E;
+  color: #F1F1F1;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-family: "Golos Text", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.container .header-container-bottom-box .header-container-order-button a:hover {
+  background-color: #fff;
+  outline: 2px solid #f56e1e;
+  color: #f56e1e;
+  transform: scale(0.9);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header-phone {
+  display: none;
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: 0.25s;
+}
+
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  transition-duration: 0.25s;
+}
+
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 0.25s;
+}
+
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+
+.first-section {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.first-section .first-section-title {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 63px;
+}
+.first-section .first-section-title h4 {
+  color: #6E7191;
+  font-family: "Golos Text", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.first-section .first-section-title h4 span {
+  color: #F56E1E;
+}
+.first-section .first-section-title h1 {
+  color: #4E4B66;
+  font-family: "Golos Text", sans-serif;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+}
+.first-section .first-section-main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+}
+.first-section .first-section-main-container .first-section-box h5 {
+  color: #6E7191;
+  font-family: "Golos Text", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  /* 163.636% */
+}
+.first-section .first-section-main-container .first-section-box h6 {
+  color: var(--Gray-02, #6E7191);
+  font-family: Golos;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin-top: 5px;
+}
+.first-section .first-section-main-container .first-section-box img {
+  width: 690px;
+  height: 380px;
+}
+
+.second-section {
+  margin-bottom: 100px;
+}
+.second-section .second-section-title h2 {
+  color: #6E7191;
+  font-family: "Golos Text", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 30px;
+}
+.second-section .second-section-main-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.second-section .second-section-main-container .box-1 {
+  border-radius: 12px;
+  background: #1F69FB;
+  padding: 25px 0px;
+  display: flex;
+  justify-content: center;
+  width: 270px;
+  height: 70px;
+  transition: all 0.2s;
+}
+.second-section .second-section-main-container .box-1:hover {
+  background-color: #3676f7;
+  cursor: pointer;
+}
+.second-section .second-section-main-container .box-2 {
+  border-radius: 12px;
+  background: #CD242F;
+  padding: 15px 0px;
+  display: flex;
+  justify-content: center;
+  width: 270px;
+  height: 70px;
+  transition: all 0.2s;
+}
+.second-section .second-section-main-container .box-2:hover {
+  background-color: #cf3540;
+  cursor: pointer;
+}
+.second-section .second-section-main-container .box-2 img {
+  width: 150px;
+  height: 40px;
+  flex-shrink: 0;
+}
+.second-section .second-section-main-container .box-3 {
+  border-radius: 12px;
+  background: #FDBF32;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  width: 270px;
+  height: 70px;
+  transition: all 0.2s;
+}
+.second-section .second-section-main-container .box-3:hover {
+  background-color: #ffcb51;
+  cursor: pointer;
+}
+.second-section .second-section-main-container .box-3 img {
+  width: 150px;
+  height: 32px;
+  flex-shrink: 0;
+}
+.second-section .second-section-main-container .box-4 {
+  border-radius: 12px;
+  background: #FD3249;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  width: 270px;
+  height: 70px;
+  transition: all 0.2s;
+}
+.second-section .second-section-main-container .box-4:hover {
+  background-color: #fa465b;
+  cursor: pointer;
+}
+.second-section .second-section-main-container .box-5 {
+  border-radius: 12px;
+  background: var(--WB-grad, linear-gradient(48deg, #CB11AB 8.29%, #481173 148.38%));
+  padding: 25px 0px;
+  display: flex;
+  justify-content: center;
+  width: 270px;
+  height: 70px;
+  transition: all 0.2s;
+}
+.second-section .second-section-main-container .box-5:hover {
+  background: var(--WB-grad, linear-gradient(15deg, #CB11AB 14%, #481173 120%));
+  cursor: pointer;
+}
+.second-section .second-section-main-container .box-5 img {
+  width: 180px;
+  height: 20px;
+  flex-shrink: 0;
+}
+.second-section .second-section-main-container .box-6 {
+  border-radius: 12px;
+  background: #ebe6e6;
+  padding: 25px 0px;
+  display: flex;
+  justify-content: center;
+  width: 270px;
+  height: 70px;
+  transition: all 0.2s;
+}
+.second-section .second-section-main-container .box-6:hover {
+  background-color: #f7ebeb;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1250px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .header-container-main-box .header-container-box .header-container-input {
+    display: flex !important;
+    width: 408px !important;
+    margin: 0 auto;
+    padding: 12px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid #A0A3BC;
+    background: #FFF;
+  }
+  .header-container-main-box .header-container-box .header-container-input input {
+    padding: 10px 10px 10px 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: var(--Gray-07, #A0A3BC);
+    font-family: "Golos Text", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .order-text {
+    display: none;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .header-container-main-box .header-container-box .header-container-input {
+    display: flex !important;
+    width: 360px !important;
+    margin: 0 auto;
+    padding: 12px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid #A0A3BC;
+    background: #FFF;
+  }
+  .header-container-main-box .header-container-box .header-container-input input {
+    padding: 10px 10px 10px 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: var(--Gray-07, #A0A3BC);
+    font-family: "Golos Text", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .header-container-main-box .header-container-box .header-icon-home {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 20px !important;
+  }
+  .header-container-main-box .header-container-box .header-icon-home .header-icon {
+    cursor: pointer;
+  }
+  .header-container-main-box .header-container-box .header-icon-home .header-icon img {
+    width: 25px !important;
+    height: 25px !important;
+    flex-shrink: 0;
+  }
+  .header-container-main-box .header-container-box .header-icon-home .header-icon p {
+    color: #6E7191;
+    font-family: "Golos Text", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    /* 133.333% */
+  }
+}/*# sourceMappingURL=style.css.map */
