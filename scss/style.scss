@@ -4,9 +4,6 @@
     font-family: 'Golos Text', sans-serif;
 }
 
-$first-breakpoint: 1250px;
-$second-breakpoints: 1100px;
-
 * {
     margin: 0;
     padding: 0;
@@ -319,9 +316,6 @@ $second-breakpoints: 1100px;
 .menu__btn {
     display: flex;
     align-items: center;
-    position: fixed;
-    top: 20px;
-    left: 20px;
 
     width: 26px;
     height: 26px;
@@ -600,44 +594,69 @@ $second-breakpoints: 1100px;
 }
 
 
+$first-breakpoint: 1250px;
+$second-breakpoints: 1100px;
+
 @media screen and (max-width: $first-breakpoint) {
     .container {
         width: 90%;
         margin: 0 auto;
     }
 
-    .header-container-main-box {
-        .header-container-box {
-            .header-container-input {
-                display: flex !important;
-                width: 408px !important;
-                margin: 0 auto;
-                padding: 12px;
-                justify-content: space-between;
-                align-items: center;
-                border-radius: 12px;
-                border: 1px solid #A0A3BC;
-                background: #FFF;
-
-                input {
-                    padding: 10px 10px 10px 10px;
-                    width: 100%;
-                    border: none;
-                    outline: none;
-                    color: var(--Gray-07, #A0A3BC);
-                    @include fonts();
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 16px;
-                }
-            }
-        }
-
+    .header-top {
+        display: none;
     }
 
-    .order-text {
-        display: none;
+    .header-phone {
+        display: block;
+        background-color: #fff;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        padding: 20px 0px;
+        z-index: 3;
+        -webkit-box-shadow: 0px 0px 19px 1px rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: 0px 0px 19px 1px rgba(34, 60, 80, 0.2);
+        box-shadow: 0px 0px 19px 1px rgba(34, 60, 80, 0.2);
+    }
+
+    .header-phone-main-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .hamburger-menu {
+            .menu__btn {
+                width: 50px;
+            }
+        }
+    }
+
+    .hamburger-menu {
+        .menu__btn {
+            position: fixed;
+            top: 45px;
+            left: 20px;
+        }
+    }
+
+    .search {;
+        i {
+            font-size: 25px;
+        }
+    }
+
+    .first-section {
+        margin-top: 150px !important;
+    }
+
+    .first-section-main-container {
+        .first-section-box {
+            img {
+                width: 500px !important;
+                height: 300px !important;
+            }
+        }
     }
 }
 
